@@ -58,19 +58,31 @@ SELECT * FROM transaction;
 
 In order to create, read, delete and update data in the database use the following CURL commands:
 (Make sure your tables have at least one row filled each)
+
 CUSTOMER
+
 curl -v -X GET http://localhost:49000/api/customers/1
+
 curl -v -X PUT http://localhost:49000/api/customers/delcus/2
+
 curl -v -X PUT http://localhost:49000/api/customers/editcust/2/4321
+
 curl -v -X PUT http://localhost:49000/api/customers/addNewCustomer/John/1234
 
 ACCOUNT
+
 curl -v -X GET http://localhost:49000/api/accounts/1
+
 curl -v -X PUT http://localhost:49000/api/accounts/delacc/2
+
 curl -v -X PUT http://localhost:49000/api/accounts/editaccount/2/25.50
+
 curl -v -X PUT http://localhost:49000/api/accounts/addNewAccount/Savings
 
 TRANSACTION
+
 curl -v -X GET http://localhost:49000/api/transactions/1
+
 curl -v -X PUT http://localhost:49000/api/transactions/deltran/2
+
 curl -v -X PUT http://localhost:49000/api/transactions/addNewTransaction/Transfer/transferfunds/55.25
