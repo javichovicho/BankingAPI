@@ -1,0 +1,12 @@
+com\mycompany\onlinebanking\service\TransactionService.class
+com\mycompany\onlinebanking\model\Message.class
+com\mycompany\onlinebanking\resources\CustomerResource.class
+com\mycompany\onlinebanking\service\AccountService.class
+com\mycompany\onlinebanking\resources\TransactionResource.class
+com\mycompany\onlinebanking\model\Account.class
+com\mycompany\onlinebanking\model\Customer.class
+com\mycompany\onlinebanking\service\CustomerService.class
+com\mycompany\onlinebanking\service\MessageService.class
+com\mycompany\onlinebanking\resources\AccountResource.class
+com\mycompany\onlinebanking\resources\MessageResource.class
+com\mycompany\onlinebanking\model\Transaction.class
