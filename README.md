@@ -17,15 +17,10 @@ In order to set up the database for this project use the following
 (The message table is a "pilot/trial" table which can be ignored or deleted)
 ```
 DROP DATABASE IF EXISTS REST1;
-
 CREATE DATABASE REST1;
-
 use rest1;
-
 DROP TABLE IF EXISTS message;
-
 CREATE TABLE Message (
-
 	id INTEGER(4) PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	
 	message VARCHAR(15) NOT NULL,
