@@ -17,44 +17,83 @@ In order to set up the database for this project use the following
 (The message table is a "pilot/trial" table which can be ignored or deleted)
 
 DROP DATABASE IF EXISTS REST1;
+
 CREATE DATABASE REST1;
+
 use rest1;
+
 DROP TABLE IF EXISTS message;
+
 CREATE TABLE Message (
+
 	id INTEGER(4) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	
 	message VARCHAR(15) NOT NULL,
+	
 	created DATE NOT NULL,
+	
 	author VARCHAR(10)
+	
 );
+
 INSERT INTO message VALUES(1, 'Pilot Message','2018-06-30','Javier');
+
 DROP TABLE IF EXISTS account;
+
 CREATE TABLE account (
+
 	id INTEGER(4) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	
 	type VARCHAR(15) NOT NULL,
+	
 	number FLOAT(10) NOT NULL,
+	
 	balance DOUBLE PRECISION(10,2)
+	
 );
+
 INSERT INTO account VALUES(1, 'Pilot','123456789',500.99);
+
 DROP TABLE IF EXISTS customer;
+
 CREATE TABLE customer (
+
 	id INTEGER(4) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	
 	name VARCHAR(15) NOT NULL,
+	
 	pin INTEGER(4) NOT NULL
+	
 );
+
 INSERT INTO customer VALUES(1, 'Pilot', 1234);
+
 DROP TABLE IF EXISTS transaction;
+
 CREATE TABLE transaction (
+
 	id INTEGER(4) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	
 	type VARCHAR(15) NOT NULL,
+	
 	description VARCHAR(20) NOT NULL,
+	
 	amount DOUBLE PRECISION(10,2) NOT NULL
+	
 );
+
 INSERT INTO transaction VALUES(1, 'Pilot', 'Pilot transaction', 150.75);
+
 SHOW tables;
+
 SELECT * FROM account;
+
 SELECT * FROM message;
+
 SELECT * FROM customer;
+
 SELECT * FROM transaction;
+
 
 In order to create, read, delete and update data in the database use the following CURL commands:
 (Make sure your tables have at least one row filled each)
