@@ -15,7 +15,7 @@ Balance: The customer can request a balance on any account at any time.
 
 In order to set up the database for this project use the following
 (The message table is a "pilot/trial" table which can be ignored or deleted)
-
+```
 DROP DATABASE IF EXISTS REST1;
 
 CREATE DATABASE REST1;
@@ -93,7 +93,7 @@ SELECT * FROM message;
 SELECT * FROM customer;
 
 SELECT * FROM transaction;
-
+```
 
 In order to create, read, delete and update data in the database use the following CURL commands:
 (Make sure your tables have at least one row filled each)
